@@ -8,6 +8,10 @@ $(function(){
   if(arr1.length > arr2.length) firstLonger=true;
   if(arr1.length < arr2.length) firstLonger=false;
 
+  const addNumbers = (array) =>  { // HOISTING
+    array.push(Math.floor(Math.random()*10))
+  }
+
   switch(firstLonger){
     case true : //LAVORO SUL SECONDO
               console.log("primo piu lungo");
@@ -25,7 +29,5 @@ $(function(){
   function addNumbers2(array){
     array.push(Math.floor(Math.random()*10))
   }
-  addNumbers = (array) =>  {
-    array.push(Math.floor(Math.random()*10))
-  }
+  
 })
